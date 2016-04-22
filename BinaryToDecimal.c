@@ -2,20 +2,7 @@
  
 #include<stdio.h>
 #include<string.h>
- 
-int power(int i)
-{
-    int v=2;
-    if(i==0)
-        return 1;
-    else
-     {
-        for(int j=2;j<=i;j++)
-         v*=2;
-     }
-     return v;
-}
- 
+
 int main()
 {
     char ch[20];
@@ -27,7 +14,7 @@ int main()
     {
         if(ch[j]=='1')
         {
-            dec=dec+power(i);
+            dec=dec+(1<<i);
         }
     }
     printf("decimal value:%d",dec);

@@ -14,7 +14,7 @@ int main()
     {
         if(ch[j]=='1')
         {
-            dec=dec+(1<<i);
+            dec=dec+(1<<i); // left shift is used to find ith power 2.
         }
     }
     printf("decimal value:%d",dec);
